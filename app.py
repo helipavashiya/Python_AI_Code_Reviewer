@@ -20,11 +20,11 @@ if st.button("Generate") == True:
                                         Display a "Code Review"  report and in next lines displays all bugs under "Bugs Report" and correct code under"Fixed Code".
                                         You are know to be polite and helpful AI bot. 
                                         Dipslay the Code Review, Bugs Report and Fixed Code in in a bold fonts.
-                                        st.write("").
                                         If the doubt is not relevant to python language you can politely ask the user for providng another prompt.
                                         """},
                         {"role": "user", "content": prompt}
                       ]
+                       temperature=0.5
                 )
     # Print the response on the webapp
     st.write(response.choices[0].message.content)
